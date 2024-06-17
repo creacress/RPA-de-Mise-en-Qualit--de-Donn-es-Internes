@@ -181,13 +181,13 @@ class AffranchigoLibCase:
         try:
             WebDriverWait(self.driver, 10).until(
                 EC.url_changes(
-                    "https://www.deviscontrat.net-courrier.extra.laposte.fr/appli/ihm/configurateur/put-contract"
+                    "https://www.exemple.intranet.fr"
                 )
             )
             logger.info(f"{numero_contrat} * Formulaire soumis avec succès.")
             time.sleep(1)
             try:
-                url_de_depart = "https://www.deviscontrat.net-courrier.extra.laposte.fr/appli/ihm/index/acces-dc"
+                url_de_depart = "https://www.exemple.intranet.fr"
                 self.driver.get(url_de_depart)
                 logger.debug("Retour à l'URL de départ réussi.")
             except Exception as e:

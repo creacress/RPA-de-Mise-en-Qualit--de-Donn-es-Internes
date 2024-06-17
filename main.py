@@ -57,7 +57,7 @@ class SeleniumManager:
         options.add_experimental_option("excludeSwitches", ["enable-logging"])
         driver = webdriver.Edge(service=service, options=options)
         self.drivers.append(driver)
-        driver.get("https://www.deviscontrat.net-courrier.extra.laposte.fr/appli/ihm/index/acces-dc?profil=ADV")
+        driver.get("https://exemple.intranet.fr")
         wait = WebDriverWait(driver, 10)
         return driver, wait
    
